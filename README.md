@@ -119,7 +119,14 @@ here are two types of memories: <br>
 <br>
 
 ## Operating System 
-An operating system is the most important software that runs on a computer. It manages the computer's memory and processes, as well as all of its software and hardware. It also allows you to communicate with the computer without knowing how to speak the computer's language. Without an operating system, a computer is useless.
+An operating system is the most important software that runs on a computer. It manages the computer's memory and processes, as well as all of its software and hardware. It also allows you to communicate with the computer without knowing how to speak the computer's language. Without an operating system, a computer is useless. <br>
+Types of Operating Systems
+Batch OS
+Distributed OS
+Multitasking OS
+Network OS
+Real-OS
+Mobile OS
 <br>
 <br>
 
