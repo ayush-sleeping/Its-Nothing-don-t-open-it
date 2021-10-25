@@ -1,3 +1,12 @@
+* [Memory Management](#Memory-Management)
+* [Traversal in Scheduling](#Traversal-in-Scheduling)
+* [Dynamic memory allocation](#Dynamic-memory-allocation)
+* [fragmentation](#fragmentation)
+* [](#)
+
+
+<hr>
+
 * [PCB block](#PCB-block)
 * [Process lifecycle](#Process-lifecycle)
 * [What is memory](#What-is-memory)
@@ -31,6 +40,55 @@
 * [Linear list](#Linear-list)
 * [Hash table](#Hash-table)
 <hr>
+<br>
+
+## Memory Management
+The term Memory can be defined as a collection of data in a specific format. It is used to store instructions and processed data. The memory comprises a large array or group of words or bytes, each with its own location. The primary motive of a computer system is to execute programs. 
+
+<br>
+
+## Traversal in Scheduling
+
+<br>
+
+## Dynamic memory allocation
+Dynamic memory allocation is when an executing program requests that the operating system give it a block of main memory.
+<br>
+
+## fragmentation
+Fragmentation is an unwanted problem where the memory blocks cannot be allocated to the processes due to their small size and the blocks remain unused. It can also be understood as when the processes are loaded and removed from the memory they create free space or hole in the memory and these small blocks cannot be allocated to new upcoming processes and results in inefficient use of memory. Basically, there are two types of fragmentation: <br>
+
+Internal Fragmentation <br>
+External Fragmentation
+
+<br>
+
+## Memory Management
+
+<br>
+
+## Memory Management
+
+<br>
+
+## Memory Management
+
+<br>
+
+## Memory Management
+
+<br>
+
+## Memory Management
+
+<br>
+
+## Memory Management
+
+<br>
+
+## Memory Management
+
 <br>
 
 ## PCB block
