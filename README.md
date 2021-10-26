@@ -30,6 +30,13 @@
 * [Heap file organisation](#Heap-file-organisation)
 * [Sequential file organisation](#Sequential-file-organisation)
 
+## Unit 2
+* [SQL in Rollback](#SQL-in-Rollback)
+* [timestamp based protocoll](#timestamp-based-protocoll)
+* [concurenccy control](#concurenccy-control)
+* [how to make permanent change in database ](#how-to-make-permanent-change-in-database )
+* [Shadow pagging](#Shadow-pagging)
+
 ## Unit 3 
 
 * [ACID Properties ](#ACID-Properties )
@@ -225,6 +232,29 @@ A sequential file contains records organized by the order in which they were ent
 <br>
 <br>
 <hr>
+
+## SQL in Rollback
+a rollback is an operation which returns the database to some previous state. Rollbacks are important for database integrity, because they mean that the database can be restored to a clean copy even after erroneous operations are performed.
+
+## timestamp based protocoll
+Timestamp based Protocol in DBMS is an algorithm which uses the System Time or Logical Counter as a timestamp to serialize the execution of concurrent transactions.
+<br>
+<br>
+
+## concurenccy control
+Concurrency Control is the management procedure that is required for controlling concurrent execution of the operations that take place on a database.
+
+But before knowing about concurrency control, we should know about concurrent execution
+<br>
+
+## how to make permanent change in database 
+the commit statement is used to save changes permanetly to the database so that they will become visible yo consequent transaction 
+<br>
+
+## Shadow pagging 
+Shadow Paging is recovery technique that is used to recover database. In this recovery technique, database is considered as made up of fixed size of logical units of storage which are referred as pages. pages are mapped into physical blocks of storage
+<br>
+<br>
 
 ## Unit 3 
 ## ACID Properties 
