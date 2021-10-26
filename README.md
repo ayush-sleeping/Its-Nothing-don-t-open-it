@@ -31,11 +31,6 @@
 * [Sequential file organisation](#Sequential-file-organisation)
 
 ## Unit 2
-* [SQL in Rollback](#SQL-in-Rollback)
-* [timestamp based protocoll](#timestamp-based-protocoll)
-* [concurenccy control](#concurenccy-control)
-* [how to make permanent change in database ](#how-to-make-permanent-change-in-database )
-* [Shadow pagging](#Shadow-pagging)
 
 ## Unit 3 
 
@@ -47,6 +42,11 @@
 * [Deadlock Handling](#Deadlock-Handling)
 * [ARIES algorithm](#ARIES-algorithm)
 * [RECOVERY from system crash](#RECOVERY-from-system-crash)
+* [SQL in Rollback](#SQL-in-Rollback)
+* [timestamp based protocoll](#timestamp-based-protocoll)
+* [concurenccy control](#concurenccy-control)
+* [how to make permanent change in database ](#how-to-make-permanent-change-in-database )
+* [Shadow pagging](#Shadow-pagging)
 
 
 
