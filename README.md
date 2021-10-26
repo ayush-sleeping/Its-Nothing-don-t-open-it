@@ -1,3 +1,222 @@
+# DBMS short viva revision :- 
+## Some Basic Concept of DBMS _
+* [Database Management System](#Database-Management-System)
+* [Characteristics of DBMS](#Characteristics-of-DBMS)
+* [Advantages of DBMS](#Advantages-of-DBMS)
+* [Disadvantages of DBMS](#Disadvantages-of-DBMS)
+
+## Unit 1:
+
+* [Stored Procedures](#Stored-Procedures)
+  * [Advantages of stored procedures](#Advantages-of-stored-procedures)
+  * [Disadvantages of stored procedures](#Disadvantages-of-stored-procedures)
+* [System defined stored procedure](#System-defined-stored-procedure)
+* [User defined stored procedure](#User-defined-stored-procedure)
+  * [Benefit of stored procedure](#Benefit-of-stored-procedure)
+* [Triggers](#Triggers)
+  * [Purpose of trigger](#Purpose-of-trigger)
+  * [Nested Triggers](#Nested-Triggers)
+* [Sequence](#Sequence)
+  * [How to drop a sequence](#How-to-drop-a-sequence)
+* [Types of file organisation](#Types-of-file-organisation)
+  * [File Organisation](#File-Organisation)
+  * [Hash file organisation](#Hash-file-organisation)
+* [Indexes Sequential Access Method](#Indexes-Sequential-Access-Method)
+* [B+Tree](#B+Tree)
+* [Clustered Tables](#Clustered-Tables)
+* [Index](#Index)
+* [Indexing Types](#Indexing-Types)
+* [Cost model](#Cost-model)
+* [Heap file organisation](#Heap-file-organisation)
+* [Sequential file organisation](#Sequential-file-organisation)
+
+
+
+<br>
+<br>
+
+
+
+## Database Management System
+* Database management system is a software which is used to manage the database. For example: MySQL, Oracle, etc are a very popular commercial database which is used in different applications.
+* DBMS provides an interface to perform various operations like database creation, storing data in it, updating data, creating a table in the database and a lot more.
+* It provides protection and security to the database. In the case of multiple users, it also maintains data consistency.
+
+<br>
+<br>
+
+## Characteristics of DBMS
+* It uses a digital repository established on a server to store and manage the information.
+* It can provide a clear and logical view of the process that manipulates data.
+* DBMS contains automatic backup and recovery procedures.
+* It contains ACID properties which maintain data in a healthy state in case of failure.
+
+<br>
+<br>
+
+## Advantages of DBMS
+* Controls database redundancy
+* Data sharing
+* Easily Maintenance
+* Reduce time
+* Backup
+* multiple user interface
+
+<br>
+<br>
+
+## Disadvantages of DBMS
+* Cost of Hardware and Software
+* Size
+* Complexity
+* Higher impact of failure
+
+<br>
+<br>
+
+## Stored Procedures
+Stored Procedures are created to perform one or more DML operations on Database. It is nothing but the group of SQL statements that accepts some input in the form of parameters and performs some task and may or may not returns a value.
+<br>
+<br>
+
+## Advantages of stored procedures
+* Since stored procedures are compiled and stored, whenever you call a procedure the response is quick.
+
+* you can group all the required SQL statements in a procedure and execute them at once.
+
+* Since procedures are stored on the database server which is faster than client. You can execute all the complicated quires using it, which will be faster.
+
+* Using procedures, you can avoid repetition of code moreover with these you can use additional SQL functionalities like calling stored functions.
+
+
+<br>
+<br>
+
+## Disadvantages of stored procedures
+The only disadvantage of a Stored Procedure is that it can be executed only in the database and utilizes more memory in the database server.
+<br>
+<br>
+
+## System defined stored procedure
+The stored procedure accepts the parameters and executes the T-SQL statements in the procedure, returns the result set if any.
+<br>
+<br>
+
+## User defined stored procedure
+User defined stored procedures are created by database developers or database administrators. These SPs contains one more more SQL statements to select, update, or delete records from database tables. User defined stored procedure can take input parameters and return output parameters
+<br>
+<br>
+
+## Benefit of stored procedure
+* Reduce network traffic
+* Security
+* Maintainability
+<br>
+<br>
+
+## Triggers
+Triggers are the SQL statements that are automatically executed when there is any change in the database. The triggers are executed in response to certain events(INSERT, UPDATE or DELETE) in a particular table. These triggers help in maintaining the integrity of the data by changing the data of the database in a systematic fashion.
+<br>
+<br>
+
+## Purpose of trigger
+1. Triggers provide a way to check the integrity of the data. When there is a change in the database the triggers can adjust the entire database.
+2. Triggers help in keeking User Interface lightweight. Instead of putting the same function call all over the application you can put a trigger and it will be executed.
+<br>
+<br>
+
+## Nested Triggers
+A trigger that contains data modification logic within itself is called a nested trigger. A trigger can also contain INSERT, UPDATE and DELETE logic within itself, so when the trigger is fired because of data modification it can also cause another data modification, thereby firing another trigger
+
+<br>
+<br>
+
+## Sequence
+A sequence is a user-defined schema bound object that generates a sequence of numeric values according to the specification with which the sequence was created
+<br>
+<br>
+
+## How to drop a sequence
+The syntax to a drop a sequence in Oracle is: DROP SEQUENCE sequence_name; sequence_name. The name of the sequence that you wish to drop.
+<br>
+<br>
+
+## Types of file organisation
+1. Types of file organization are as follows:
+2. Sequential file organization.
+3. Heap file organization.
+4. Hash file organization.
+5. B+ file organization.
+6. Indexed sequential access method (ISAM)
+7. Cluster file organization.
+<br>
+<br>
+
+## File Organisation
+File Organization in DBMS: A database contains a huge amount of data, which is stored is in the physical memory in the form of files. A file is a set of multiple records stored in the binary format.
+<br>
+<br>
+
+## Hash file organisation
+In this method of file organization, hash function is used to calculate the address of the block to store the records. The hash function can be any simple or complex mathematical function. The hash function is applied on some columns/attributes – either key or non-key columns to get the block address. Hence each record is stored randomly irrespective of the order they come. 
+<br>
+<br>
+
+## Indexes Sequential Access Method
+ISAM method is an advanced sequential file organization. In this method, records are stored in the file using the primary key. An index value is generated for each primary key and mapped with the record. This index contains the address of the record in the file.
+<br>
+<br>
+
+## B+Tree
+The B+ tree is a balanced binary search tree. It follows a multi-level index format.
+In the B+ tree, leaf nodes denote actual data pointers. B+ tree ensures that all leaf nodes remain at the same height.
+<br>
+<br>
+
+## Clustered Tables
+A cluster is a schema object that contains data from one or more tables, all of which have one or more columns in common. 
+<br>
+<br>
+
+## Index
+Indexing is a data structure technique to efficiently retrieve records from the database files based on some attributes on which the indexing has been done. Indexing in database systems is similar to what we see in books.
+<br>
+<br>
+
+
+
+## Indexing Types
+* Primary Indexing
+  * Dense Index
+  * Sparse Index
+* Secondary Indexing
+<br>
+<br>
+
+## Cost model
+a cost model is a mathematical algorithm or equation for estimating costs of a product or project.
+<br>
+<br>
+
+## Heap file organisation
+Here records are inserted at the end of the file as and when they are inserted. There is no sorting or ordering of the records.  Once the data block is full, the next record is stored in the new block. This new block need not be the very next block.
+<br>
+<br>
+
+## Sequential file organisation
+A sequential file contains records organized by the order in which they were entered. The order of the records is fixed. Records in sequential files can be read or written only sequentially. After you place a record into a sequential file, you cannot shorten, lengthen, or delete the record.
+<br>
+<br>
+
+##
+
+<br>
+<br>
+
+
+
+## OS Viva Revision
+
 * [Memory Management](#Memory-Management)
 * [Traversal in Scheduling](#Traversal-in-Scheduling)
 * [Dynamic memory allocation](#Dynamic-memory-allocation)
