@@ -30,8 +30,20 @@
 * [Heap file organisation](#Heap-file-organisation)
 * [Sequential file organisation](#Sequential-file-organisation)
 
+## Unit 3 
+
+* [ACID Properties ](#ACID-Properties )
+* [Serizable Schedule](#Serizable-Schedule )
+* [Explain read write blocks](#Explain-read-write-blocks)
+* [Shared locks](#Shared-locks)
+* [Exclusive locks](#Exclusive-locks)
+* [Deadlock Handling](#Deadlock-Handling)
+* [ARIES algorithm](#ARIES-algorithm)
+* [RECOVERY from system crash](#RECOVERY-from-system-crash)
 
 
+
+<hr>
 <br>
 <br>
 
@@ -212,6 +224,67 @@ A sequential file contains records organized by the order in which they were ent
 
 <br>
 <br>
+<hr>
+
+## Unit 3 
+## ACID Properties 
+In computer science ACID (Atomicity consistensy isolation durability ) is a set of properties of database transaction in context of database a sequence of a database operations thatr specifies the ACID properties .
+<br>
+<br>
+
+## Serizable Schedule 
+if execution of all transaction is a concurrent schedule produces same result as in serial schedule then it is called serizable schedule
+<br>
+<br>
+
+## Explain read write blocks 
+ReadWriteLock is an advanced thread lock mechanism. It allows multiple threads to read a certain resource, but only one to write it, at a time. The idea is, that multiple threads can read from a shared resource without causing concurrency errors.
+<br>
+
+## Shared locks
+shared lock is qalso known as read lock is acquried on the transaction when concurrent transaction granted the permission for read access of the data 
+<br>
+
+## Exclusive locks 
+When a statement modifies data, its transaction holds an exclusive lock on data that prevents other transactions from accessing the data. This lock remains in place until the transaction holding the lock issues a commit or rollback.
+<br>
+<br>
+
+## Deadlock Handling
+A system is said to be in a state of deadlock . if every transaction in schedule is waiting for another transaction in schedule to release a lock of some data item 
+<br>
+<br>
+
+## DCL statement 
+The data control language statements are used to create a priviliges to permits users access and manipulations of the database 
+<br>
+
+## REVOKE statements 
+ REVOKE statements is used to remove priviliges given to users by system 
+<br>
+<br>
+
+## Define transaction 
+A transaction is a program unit whose execution may or may not change the contents of a database. The transaction concept in DBMS is executed as a single unit
+<br>
+<br>
+
+## ROLLBACK statement
+The ROLLBACK statement is the inverse of the COMMIT statement. It undoes some or all database changes made during the current transaction. ... If the statement fails, a rollback to this implicit savepoint is done
+<br>
+<br>
+
+## ARIES algorithm 
+ARIES stands for “Algorithm for Recovery and Isolation Exploiting Semantics.” It was designed to support the needs of industrial strength transaction processing systems. 
+<br>
+<br>
+
+## RECOVERY from system crash 
+- Recovery from system crash can be done by using three phrase 
+1. Analysis phrases 
+2. REDO phrases
+3. Undo phrases 
+
 
 
 
