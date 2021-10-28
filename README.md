@@ -1,3 +1,308 @@
+## IOT Imp. for viva _
+
+### Unit 1.
+* [SOC definition](#SOC-definition)
+* [FPGA](#FPGA)
+* [GPU](#GPU)
+* [AMD](#AMD)
+* [Compute Units](#Compute-Units)
+* [ARM8 in iot](#ARM8-in-iot)
+* [What is Rasberry Pi](#What-is-Rasberry-Pi)
+
+<br>
+<hr>
+
+### Unit 2.
+* [RAspberry pi](#RAspberry-pi)
+* [intro to NODE.Js](#intro-to-NODE.Js)
+* [Application OF NODE.JS](#Application-OF-NODE.JS)
+* [Features of node .js](#Features-of-node-.js)
+* [Uses of Node.js](#Uses-of-Node.js)
+* [Node.js REPL](#Node.js-REPL)
+* [Node.Js CALLBACK](#Node.Js-CALLBACK)
+* [Streams in Node.Js](#Streams-in-Node.Js)
+* [Intro to Python](#Intro-to-Python)
+* [Application of Python](#Application-of-Python)
+* [Features of python](#Features-of-python)
+* [Python Comments](#Python-Comments)
+* [Python Number](#Python-Number)
+* [Python Function](#Python-Function)
+* [Python Modules](#Python-Modules)
+* [Python Exceptions](#Python-Exceptions)
+* [UART](#UART)
+* [GPIO](#GPIO)
+* [I2C](#I2C)
+* [Serial pheripheral interfaces](#Serial-pheripheral-interfaces)
+* [SPI camera](#SPI-camera)
+<br>
+<hr>
+
+### Unit 3. 
+* [When IOT comes and in which year](#When-IOT-comes-and-in-which-year)
+* [Define IOT](#Define-IOT)
+* [How IOT works](#How-IOT-works)
+* [Features of IOT](#Features-of-IOT)
+* [Advantage and disadvantage of IOT](#Advantage-and-disadvantage-of-IOT)
+* [What are IOT Protocols](#What-are-IOT-Protocols)
+* [Explain HTTP Protocol](#Explain-HTTP-Protocol)
+* [UNPN Protocoll](#UNPN-Protocoll)
+* [MQTT protocalls](#MQTT-protocalls)
+* [XMpp protocall](#XMpp-protocall)
+* [COAP protocall](#COAP-protocall)
+* [Thinger.iot](#Thinger.iot)
+* [Clayster in IoT](#Clayster-in-IoT)
+* [Node red](#Node-red)
+<br>
+<hr>
+<br>
+
+## SOC definition
+A system on a chip (SoC) is an integrated circuit (IC) that integrates all components of a computer or other electronic system into a single chip. SOC's may contain digital, analog, mixed-signal, and often radio-frequency functions―all on a single chip substrate.
+* Practical	ans of SOC:
+SOC's may contain digital, analog, mixed-signal, and often radio-frequency functions―all on a single chip substrate. SoCs are very common in the mobile electronics market because of their low power consumption. SoCs are very common in the mobile electronics market as of their low power consumption. A typical application is in the area of embedded systems.
+<br>
+
+## FPGA
+Field-Programmable Gate Array. It's a computing device that works like an Arduino Microcontroller — but in a different way. ... The FPGA allows you to “burn” connections between the logic modules to make up complex processing logic, similar to CPU instructions.
+<br>
+
+## GPU
+A graphics processing unit (GPU) is a processor that renders (or creates) images, animations, graphics and then displays them on the computer's screen. A strong GPU is able to process complex animations and graphics smoothly and efficiently.
+<BR>
+
+## AMD 
+* APU also known as fusion is a microprocessor from AMD (Advanced Micro Devices) Inc. If we want to put it in simple words then we can say that APU is CPU which has an integrated GUP. 
+
+* Embedding CPU and GPU on the same die was not an unique idea but APU did help in improving gaming experience with increase in frame rate and resolution.
+
+* AMD developed its first generation APU in 2011, “Llano” for high-performance and “Brazos” for low-power devices.
+World’s best consoles like Sony’s PlayStation and Microsoft’s XBOX both use semi-custom third generation low-power APUs.
+<BR>
+
+## Compute Units
+A compute unit is a stream multiprocessor in a NVidia GPU or a SIMD-Single instruction and Each compute unit has several processing elements .
+<BR>
+
+## ARM8 in iot
+The Arm IoT Platform is a secure, flexible, and efficient device-to-data platform for connectivity, device, and data management. <BR>
+Arm Total Solutions for IoT delivers a full stack solution to significantly accelerate IoT product development and improve product ROI. Arm Virtual Hardware removes the need to develop on physical silicon, enabling software and hardware co-design and accelerating product design
+<br>
+
+## What is Rasberry Pi
+The Raspberry Pi is a very small computer that is almost the size of your credit card. It costs between Rs 750 and Rs 4000. It can function as a proper desktop computer or use to build smart devices and is available anywhere in the world.
+
+The Pi changed into what initially was meant to be a microcomputer to teach kids coding. Its scope can expand after hobbyists and engineers noticed its capacity, and it’s far now one of the most famous objects inside the international era.
+<HR>
+
+## Unit 3
+## When IOT comes and in which year
+internet of things first popular in the year 1999 through the Auto id center at MIt and related market analysis publication.
+At the time of Radio Frequency Identification (RFID) was a requirment for IOT
+<br>
+
+## Define IOT
+1. THe Internet Of Things (IOT) is the network of physical objects embedded with electronics , Software , sensors , and  network connectivity that enables this objects to collects and exchange data .
+2. The internet of Things(IOT) is a wireless networks between objects and things 
+<br>
+
+## How IOT works 
+1. RFID identify and the data 
+2. Sensor are used to collect and process the data to detect the changes in physicals status of the things 
+3. the smart technology is used to enhanced the poweer of network by devloping process to diffrent part of networks 
+4. the nano technology is used to make the smaller things to connect the internet   
+<br>
+
+## Features of IOT 
+. AI = IOt makes anyything smart virtually it is done with the help of data connection and artificial intelligences 
+. connectivity = As per the advances in new technology you can now connect the smaller devices to the networks 
+. Active engagement = now an day a maximum communication connected technology via passive engagemnet Iot intoduce new model for active content products or service engagemnt 
+<br>
+
+## Advantage and disadvantage of IOT 
+### Advantage =
+* Efficient resource utilization
+* Minimize human effort:
+* Save time
+* Improve security
+### Disadvantage = 
+* Privacy 
+* complexicity 
+* flexibilty 
+* compilances 
+
+<br>
+
+## What are IOT Protocols
+Image result for explain iot protocol
+IoT communication protocols are modes of communication that protect and ensure optimum security to the data being exchanged between connected devices
+<br>
+
+## Explain HTTP Protocol
+Hypertext Transfer Protocol (HTTP) is the foundation of data communication for the World Wide Web. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. HTTP is the protocol to exchange or transfer hypertext.
+<br>
+
+## UNPN Protocoll
+* upnp is a common protocall it used by all netwoks enabled consumer electronics products utilized in your home or office . upnp is very imprtant part of digital living network alliances (DLNA)
+<br>
+
+## MQTT protocalls
+* A server, or broker, which communicates with the clients (publishers and subscribers) via an internet connection or a local network.
+* A publisher creates messages and publishes them to a certain topic.
+* A subscriber receives the messages relevant to the topic it is subscribed to.
+<br>
+
+## XMpp protocall 
+As mentioned above, XMPP works by passing small, structured chunks of XML data between endpoints (clients) via intermediary servers. In other words, if you send a message to your friend using XMPP, that message, as part of an XML document, first travels to a server instead of traveling directly to your friend's device
+<br>
+
+## COAP protocall 
+Constrained Application Protocol (CoAP) is a specialized web transfer protocol for use with constrained nodes and constrained networks in the Internet of Things. CoAP is designed to enable simple, constrained devices to join the IoT even through constrained networks with low bandwidth and low availability.
+<br>
+
+## Thinger.iot 
+What is Thinger.io? Thinger.io is a cloud IoT Platform that provides every needed tool to prototype, scale and manage connected products in a very simple way
+<br>
+
+## Clayster in IoT
+Clayster is a modern provisioning and billing system for mobile operators. An infrastructure for all your IoT devices, allowing operators to offer fully customizable connectivity solutions with flexible pricing models.
+<br>
+
+## Cariots 
+CAriots is a open source platform its a platform as a services (Paas) designed for internet of things (IOT) and for machine to machine (M2M) projects 
+<br>
+
+## Node red 
+Node red is a programming tool it is used for writing together hardware devices online services  and API's.
+<hr>
+<br>
+<br>
+
+
+## RAspberry pi 
+the raspberry pi like a pc and ca be plugged into TV or monitor as it is credit card shaped and it is used along with general purpose input output (GPIO) pins to control all equipment 
+<br>
+
+## intro to NODE.Js
+.nodejs is free open source framework that uses javascript 
+.it is uses for building fast and scalable and network
+<br>
+
+## Application OF NODE.JS 
+it can be used to run on microsoft os x windows and linux .Node js is creates dynamic pages content and also can read and write open and close file on the server collect data and insert , delete oe edit data in database
+<br>
+
+## Features of node .js 
+1. event driven : the application programming interface (API) of the node js liblary are nonblocking. it means that the server using the node js never waits for the return of data 
+2. speed : its coding exection is very less , making it very fast 
+3. buffering: Application build on nodejs never buffer 
+<br>
+
+## Uses of Node.js 
+* can  build HTTP server, TCP server , DNS server 
+* statics file server can also can be used to create online games 
+* NOde js Ecosysyem :  <br>
+1. nodejs release heavy on module 
+2. To create a module put your javascript code in a seprate js file and incliude it in your code by using keyword required.
+<br>
+
+## Node.js REPL
+* basically a REPL envoirment is 
+* READ : Takes an input from user and stores in the memory 
+* Eval : evaluates the input and the data structure 
+* Print : prints the final search 
+<br>
+
+## Node.Js CALLBACK 
+* What is Node js callback? <br>
+Callback is an asynchronous equivalent for a function. A callback function is called at the completion of a given task. Node makes heavy use of callbacks. ... This makes Node. js highly scalable, as it can process a high number of requests without waiting for any function to return results.
+<br>
+
+## Streams in Node.Js
+Streams are objects that allows developers to read/write data to and from a source in a continuous manner. <br>
+* Types of Stream 
+1. Readable 
+2. Writeable
+3. Duplex 
+4. transform
+<br>
+
+## Intro to Python 
+Python is a general purpose object oriented  programming language and scripting language and it is also known as Interpreted language 
+<br>
+
+## Application of Python 
+1. Web devlopment : used in frameworks such as Django and pyramid
+2. internet protocalls: supports XML, HTML,FTP and other internet protocalls
+3. Software devlopment : often used as a lanugauage by the software devlooper
+<br>
+
+## Features of python 
+1. Easy Language
+Python is an easy language. It is easy to read, write, learn and understand.
+2. Readable
+The Python language is designed to make developers life easy. Reading a Python code is like reading an English sentence. This is one of the key reason that makes Python best for beginners
+3. Interpreted Language
+Python is an interpreted language. It comes with the IDLE (Interactive Development Environment). This is an interpreter and follows the REPL structure (Read-Evaluate-Print-Loop). It executes and displays the output of one line at a time.
+4. Object-Oriented
+Python is object-oriented but supports both functional and object-oriented programming. Everything in Python is an object.
+<br>
+
+## Python Comments 
+A Python comment is a line of text in a program that is not executed by the interpreter. Comments are used during debugging to identify issues and to explain code.
+<br>
+
+## Python Number 
+Python supports four diffrent type number 
+1. int
+2. long 
+3. float 
+4. complex 
+<br>
+
+## Python Function 
+* A function is a block of code which only runs when it is called.
+
+* You can pass data, known as parameters, into a function.
+
+* A function can return data as a result.
+
+<br>
+
+## Python Modules 
+A module may be define as a file consisiting of python code and may consist of function and variables 
+<br>
+
+## Python Exceptions 
+In general, when a Python script encounters a situation that it cannot cope with, it raises an exception. An exception is a Python object that represents an error.
+<br>
+
+## UART 
+UART (universal Asynchronous  Reciever) is an  Asynchronous Serial  Communication Protocall which means that is takes input as bytes of data and transmits the individuals bits in a sequential manner 
+<br>
+
+## GPIO
+This chapter discusses the interfaces and classes for reading from and writing to the General Purpose Input/Output (GPIO) pins and ports of the embedded device board. A GPIO pin is a generic pin whose value consists of one of two voltage settings (high or low) and whose behavior can be programmed through software
+<br>
+
+## I2C
+The I2C bus allows multiple devices to be connected to raspberry pi where each devices has a unique address which can be set by changing jumpper settings on the module 
+<br>
+
+## Serial pheripheral interfaces
+SPI is a full-duplex interface; both master and slave can send data at the same time via the MOSI and MISO lines respectively. During SPI communication, the data is simultaneously transmitted (shifted out serially onto the MOSI/SDO bus) and received (the data on the bus (MISO/SDI) is sampled or read in).
+<br>
+
+## SPI camera
+This SPI camera is a general-purpose solution that is not limited to the Arduino platform but can also be used on any other hardware platforms with SPI and I2C interfaces.
+
+* [](#)
+* [](#)
+* [](#)
+* [](#)
+ 
+ 
+ 
+
 # DBMS short viva revision :- 
 ## Some Basic Concept of DBMS _
 * [Database Management System](#Database-Management-System)
