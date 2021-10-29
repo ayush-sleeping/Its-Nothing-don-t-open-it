@@ -1,3 +1,142 @@
+## WP
+
+* [What is html](#What-is-html)
+* [Name some html tags](#Name-some-html-tags)
+* [How to create html tables](#How-to-create-html-tables)
+* [How to links page in htmls](#How-to-links-page-in-htmls)
+* [What is css](#What-is-css)
+* [Selectors in css](#Selectors-in-css)
+* [Insert css in html](#Insert-css-in-html)
+* [Change size of font in html css](#Change-size-of-font-in-html-css)
+* [What is positioning](#What-is-positioning)
+#
+
+* [what is javascript](#what-is-javascript)
+* [Client side scripting](#Client-side-scripting)
+* [Javascript operators](#Javascript-operators)
+* [Dom manipulaion](#Dom-manipulaion)
+* [what is xml](#what-is-xml)
+* [XSLT explain?](#XSLT-explain?)
+* [Include javascript in html file](#Include-javascript-in-html-file)
+#
+
+* [Ajax](#Ajax)
+* [php](#php)
+* [data types in php](#data-types-in-php)
+* [query](#query)
+* [Cookies?](#Cookies?)
+* [How ajax works](#How-ajax-works)
+
+### Unit 1 
+
+## What is html 
+The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.
+<br>
+
+## Name some html tags 
+<a> for link
+<b> to make bold text
+<strong> for bold text with emphasys
+<body> main HTML part
+<br> for break
+<div> it is a division or part of an HTML document
+<br>
+
+## How to create html tables 
+To create table in HTML, use the <table> tag. A table consist of rows and columns, which can be set using one or more tr, th, and td elements
+<br>
+
+## How to links page in htmls  
+To make page links in an HTML page, use the <a> and </a> tags, which are the tags used to define the links
+<br>
+
+## What is css
+CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users.
+<br>
+
+## Selectors in css
+CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set.
+<br>
+
+## Insert css in html 
+There are three methods of including CSS in an HTML document: Inline styles — Using the style attribute in the HTML start tag. Embedded styles — Using the <style> element in the head section of a document.
+Types of css file 
+Inline 
+External 
+Internal 
+<br>
+
+## Change size of font in html css 
+To change the font size in HTML, use the style attribute. The style attribute specifies an inline style for an element.
+<br>
+
+## What is positioning 
+HTML elements are positioned static by default and the element is positioned according to the normal flow of the document;
+<br>
+
+### Unit 2 
+## what is javascript 
+JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user
+<br>
+
+## Client side scripting 
+Client-side scripting is source code that is executed on the client's browser instead of the web-server, and allows for the creation of faster and more responsive web applications
+<br>
+
+## Javascript operators 
+JavaScript includes operators same as other languages. An operator performs some operation on single or multiple operands (data value) and produces a result. 
+<br>
+## Loops in javascript 
+JavaScript supports different kinds of loops:
+for - loops through a block of code a number of times.
+for/in - loops through the properties of an object.
+for/of - loops through the values of an iterable object.
+while - loops through a block of code while a specified condition is true.
+<br>
+
+## Dom manipulaion 
+When writing web pages and apps, one of the most common things you'll want to do is manipulate the document structure in some way. This is usually done by using the Document Object Model (DOM)
+<br>
+
+## what is xml 
+Extensible Markup Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. 
+<br>
+
+## XSLT explain?
+XSLT, which stands for Extensible Stylesheet Language Transformations, is a declarative, XML-based language used for the transformation of XML documents into other XML documents.
+<br>
+
+## Include javascript in html file 
+To include an external JavaScript file, we can use the script tag with the attribute src .
+<br>
+
+### unit 3
+## Ajax 
+Ajax is a set of web development techniques that uses various web technologies on the client-side to create asynchronous web applications. 
+<br>
+
+## php 
+PHP is a recursive acronym for "PHP: Hypertext Preprocessor". PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic content,
+<br>
+
+## data types in php
+String. Integer. Float (floating point numbers - also called double)
+<br>
+
+## query 
+A query is a request for data or information from a database table or combination of tables.
+<br>
+
+## Cookies?
+Cookies are text files with small pieces of data — like a username and password — that are used to identify your computer as you use a computer network.
+<br>
+
+## How ajax works 
+AJAX uses both a browser built-in XMLHttpRequest object to get data from the web server and JavaScript and HTML DOM to display that content to the user 
+<br>
+
+<hr>
+<hr>
 ## IOT Imp. for viva _
 
 ### Unit 1.
