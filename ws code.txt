@@ -1,0 +1,349 @@
+Practical no 1:
+
+Aim: Write a program to implement to create a simple web service that converts the temperature
+from Fahrenheit to Celsius and vice a versa.
+
+tempservice.java
+package mypack;
+import javax.jws.WebService;
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+@WebService(serviceName = "tempservice")
+public class tempservice {
+@WebMethod(operationName = "hello")
+ public String hello(@WebParam(name = "name") String txt)
+{
+ return "Hello " + txt + " !";
+ }
+ @WebMethod(operationName = "F_to_C")
+ public Double F_to_C(@WebParam(name = "val") double val)
+{
+ return ((val-32)*5/9);
+ }
+ @WebMethod(operationName = "C_to_F")
+ public Double C_to_F(@WebParam(name = "val") double val) {
+
+ return (val*9/5)+32;
+ }
+}
+
+
+//TempClient.java
+
+package tempclient;
+import java.io.BufferedReader; import java.io.IOException;
+import java.io.InputStreamReader;
+public class TempClient {
+public static void main(String[] args) throws IOException {
+Double t; int ch;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in)); System.out.println("1. Celcius to Fahreheit");
+System.out.println("2. Fahrenheit to celcius"); System.out.println("Enter your Choice");
+ch=Integer.parseInt(br.readLine());
+System.out.println("Enter temperature");
+t=Double.parseDouble(br.readLine());
+if(ch==1)
+System.out.println("temperature in fahrenheit="+cToF(t));
+else
+System.out.println("Temperature in celcius="+fToC(t));
+
+}
+private static Double cToF(double val) {
+mypack.TempWebService_Service service = new mypack.TempWebService_Service(); mypack.TempWebService port = service.getTempWebServicePort();
+return port.cToF(val);
+}
+private static Double fToC(double val) {
+mypack.TempWebService_Service service = new mypack.TempWebService_Service(); mypack.TempWebService port = service.getTempWebServicePort();
+return port.fToC(val);
+}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Practical no 4 :
+
+Aim: Develop client which consumes web services developed in different
+ platform. 
+
+
+pdf (step no 9 )After click on Add button, Operaion.asmx.cs file will be automatically open
+otherwise open it from Solution Explorer and Add the following code into
+Class Operation.
+ [WebMethod]
+ public double Add(double a, double b)
+ {
+ double sum = a + b;
+ return sum;
+ }
+ [WebMethod]
+ public double Multi(double a, double b)
+ {
+ double sum = a * b;
+ return s
+ }
+pdf (step no 29 ) Now add the following code outside of try block.
+double num1 = Double.parseDouble(request.getParameter("txt1"));
+double num2 = Double.parseDouble(request.getParameter("txt2"));
+pdf (step no 31) . Now open index.html file of ServiceClient project and replace the contents
+of body tag with following code. After that press Ctrl+S to save it.
+<form>
+<input type="text" name="txt1" placeholder="Enter First
+Number"><br><br>
+<input type="text" name="txt2" placeholder="Enter Second
+Number"><br><br>
+ <input type="submit" formaction="Add.jsp" value="Add Numbers">
+</form>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Practical no 5 :
+
+Aim: Write a JAX-WS web service to perform the following operations. Define a Servlet / JSP that
+consumes the web service.
+calservice.java
+package mypack;
+import javax.jws.WebService; import javax.jws.WebMethod; import javax.jws.WebParam;
+@WebService(serviceName = "calcservice") public class calcservice {
+@WebMethod(operationName = "hello")
+public String hello(@WebParam(name = "name") String txt) { return "Hello " + txt + " !";
+}
+@WebMethod(operationName = "Addition")
+public Integer Addition(@WebParam(name = "a") int a, @WebParam(name = "b") int b) {
+//TODO write your implementation code here:
+return a+b;
+}
+
+
+
+
+@WebMethod(operationName = "Subtract")
+public Integer Subtract(@WebParam(name = "a") int a, @WebParam(name = "b") int b) {
+return a-b;
+}
+}
+
+
+Write code in index.html
+
+<html>
+<head>
+<title>TODO supply a title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<form action="index.jsp">
+Enter n1 <input type="text" name="n1"> Enter n2<input type="text" name="n2">
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Practical no 8 :
+
+Aim: Define a RESTful web service that accepts the details to be stored in a database and performs CRUD operation.
+
+There is no code in practical no 8 you have to follow the steps only
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Practical no 10 :
+
+Aim : Implement a typical service and client using WCF
+
+MathService.svc.cs
+using System;
+using System.Collections.Generic; using System.Linq;
+using System.Runtime.Serialization; using System.ServiceModel;
+using System.Text;
+namespace MathService1
+{
+// NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "MathService" in code, svc and config file together.
+public class MathService : IMathService
+{
+public Int32 add(Int32 n1, Int32 n2)
+{
+return n1 + n2;
+}
+public Int32 subtract(Int32 n1, Int32 n2)
+{
+return n1 - n2;
+}
+public Int32 multiply(Int32 n1, Int32 n2)
+{
+return n1 * n2;
+}
+public Int32 divide(Int32 n1, Int32 n2)
+{
+return n1 / n2;
+}
+}
+}
+
+
+IMathService.cs
+
+using System;
+using System.Collections.Generic; using System.Linq;
+using System.Runtime.Serialization; using System.ServiceModel;
+using System.Text;
+namespace MathService1
+{
+// NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IMathService" in both code and config file together.
+[ServiceContract]
+public interface IMathService
+{
+[OperationContract]
+Int32 add(Int32 n1, Int32 n2);
+[OperationContract]
+Int32 subtract(Int32 n1, Int32 n2);
+[OperationContract]
+Int32 multiply(Int32 n1, Int32 n2);
+[OperationContract]
+Int32 divide(Int32 n1, Int32 n2);
+}
+}
+
+
+WCF Client
+Form1.cs
+
+using System;
+using System.Collections.Generic; using System.ComponentModel; using System.Data;
+using System.Drawing; using System.Linq; using System.Text;
+using System.Windows.Forms;
+using MathServiceTestApp1.MathService1; namespace MathServiceTestApp1
+{
+public partial class Form1 : Form
+{
+public Form1()
+{
+InitializeComponent();
+}
+
+private void calculate_Click(object sender, EventArgs e)
+
+{
+MathServiceClient loclient = new MathServiceClient(); Int32 num1 = Convert.ToInt32(textBox1.Text.Trim()); Int32 num2 = Convert.ToInt32(textBox2.Text.Trim());
+
+if (comboBox1.Text == "add")
+{
+textBox3.Text = loclient.add(num1, num2).ToString();
+}
+
+else if (comboBox1.Text == "subtract")
+{
+textBox3.Text = loclient.subtract(num1, num2).ToString();
+}
+else if (comboBox1.Text == "multiply")
+{
+}
+else
+{
+} 
+textBox3.Text = loclient.multiply(num1, num2).ToString();
+textBox3.Text = loclient.divide(num1, num2).ToString();
+}
+}
+}
+
+
+15)	double click on calculate button and write code
+
+
+private void calculate_Click(object sender, EventArgs e)
+{
+MathServiceClient loclient = new MathServiceClient(); Int32 num1 = Convert.ToInt32(textBox1.Text.Trim()); Int32 num2 = Convert.ToInt32(textBox2.Text.Trim());
+if (comboBox1.Text == "add")
+{
+textBox3.Text = loclient.add(num1, num2).ToString();
+}
+else if (comboBox1.Text == "subtract")
+{
+textBox3.Text = loclient.subtract(num1, num2).ToString();
+}
+else if (comboBox1.Text == "multiply")
+{
+textBox3.Text = loclient.multiply(num1,
+num2).ToString();
+}
+else
+{
+textBox3.Text = loclient.divide(num1,
+num2).ToString();
+}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Practical no 11 :
+
+Aim : Use WCF to create a basic ASP.NET Asynchronous JavaScript and XML(AJAX) service
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<asp:ScriptManager ID="sm1" runat="server">
+<Services>
+<asp:ServiceReference Path="~/GreetingService.svc" />
+</Services>
+</asp:ScriptManager>
+<input type="button" value="greet" onclick="showgreeting()" />
+</div>
+</form>
+</body>
+</html>
+
+<script language="javascript" type="text/javascript"> function showgreeting()
+{
+GreetingService.Greeting(onSuccess);
+}
+function onSuccess(response)
+{
+alert(response);
+}
+</script>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Practical no 12 :
+
+Aim: Demonstrate using the binding attribute of an endpoint element in WCF
+(Program for WCF TCP-Binding)
+
+6)	write code in ICalcService.cs
+using System;
+using System.Collections.Generic; using System.Linq;
+using System.Text;
+using System.ServiceModel;
+namespace SampleCalcSvc
+{
+[ServiceContract]
+public interface ICalcService
+{
+[OperationContract]
+int GetSum(int a, int b);
+}
+}
+
+8)	write code ICalcService.cs
+using System.Text; namespace SampleCalcSvc
+{
+public class CalcService : ICalcService
+{
+public int GetSum(int a, int b)
+{
+return a + b;
+}
+}
+}
+ 
+
+
+
+
+
+
+
+ 
+
